@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint .",
     "export": "next build",
-    "deploy": "npm run export"
+    "deploy": "npm run export && cp -r out/* . && git add -A && git commit -m 'Deploy to git-page' && git push origin git-page"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
